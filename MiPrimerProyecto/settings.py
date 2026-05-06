@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://localhost:8000",
+    "https://glorious-goggles-754x49g7jvp3prww-8000.app.github.dev",
+]
+
 
 # Application definition
 
