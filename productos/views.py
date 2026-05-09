@@ -4,8 +4,8 @@ from .models import Producto
 
 # Create your views here.
 def index(request):
-     productos = Producto.objects.all()
-     return render(request, 'productos/home.html',{'productos':productos} )
+    productos = Producto.objects.all()#trae los productos desde la db como obj 
+    return render(request, 'productos/home.html',{'productos':productos})
     
 
 

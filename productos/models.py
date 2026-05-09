@@ -11,5 +11,10 @@ class Producto(models.Model):
     def __str__(self):
         return self.nombre
     
+
+class cerveza(models.Model):
+    nombre = models.CharField(max_length=100)
+    tipo =  models.CharField(max_length=100)
+    grados =  models.CharField(max_length=100)
     
     

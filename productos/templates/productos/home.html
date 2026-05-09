@@ -7,7 +7,13 @@
 </head>
 <body>
 
-    <p>{{productos}}</p>
+    <p>html template</p>
+
+    {% for producto in productos  %}
+        {{producto.nombre}}
+        {{producto.precio}}
+        {{producto.disponible}}
+    {% endfor %}
     
 </body>
 </html>
